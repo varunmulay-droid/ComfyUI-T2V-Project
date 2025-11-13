@@ -1,0 +1,37 @@
+# ==============================
+# ComfyUI-T2V Project Dependencies
+# ==============================
+
+# --- Core ML Stack ---
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+xformers>=0.0.27
+accelerate>=0.26.0
+diffusers>=0.30.0
+einops>=0.7.0
+
+# --- ComfyUI Runtime & Utilities ---
+gradio>=4.36.0
+imageio>=2.33.0
+Pillow>=10.2.0
+numpy>=1.26.0
+av>=12.0.0
+requests>=2.32.0
+
+# --- Video & Audio Encoding ---
+moviepy>=1.0.3
+
+# --- HuggingFace & Transformers Ecosystem ---
+transformers>=4.42.0
+safetensors>=0.4.2
+
+# --- Dev Tools ---
+tqdm
+psutil
+packaging
+importlib-metadata
+python-dotenv
+
+# --- Colab / Utility Addons ---
+gitpython
