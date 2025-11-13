@@ -1,0 +1,8 @@
+ComfyUI-T2V-Project/
+├── backend/
+│   └── backend_comfyui.py
+├── frontend/
+│   └── app_comfyui.py
+├── models/                 ← auto-created & populated
+├── metadata.json
+└── run_project.py

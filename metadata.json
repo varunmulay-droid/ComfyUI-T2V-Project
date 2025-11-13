@@ -1,0 +1,32 @@
+{
+  "project_name": "ComfyUI-T2V-Project",
+  "version": "1.0.0",
+  "description": "Text-to-Video generation using Wan 2.1 + ComfyUI nodes.",
+  "author": "Chatty",
+  "backend": {
+    "path": "backend/backend_comfyui.py",
+    "description": "Handles environment setup, model loading, and node execution."
+  },
+  "frontend": {
+    "path": "frontend/app_comfyui.py",
+    "description": "Gradio interface for user interaction and video generation."
+  },
+  "models": {
+    "umt5_xxl_fp8_e4m3fn_scaled.safetensors": "huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+    "wan_2.1_vae.safetensors": "huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
+    "wan2.1-t2v-14b-Q5_0.gguf": "huggingface.co/city96/Wan2.1-T2V-14B-gguf/resolve/main/wan2.1-t2v-14b-Q5_0.gguf",
+    "wan2.1-t2v-14b-Q6_K.gguf": "huggingface.co/city96/Wan2.1-T2V-14B-gguf/resolve/main/wan2.1-t2v-14b-Q6_K.gguf"
+  },
+  "python_version": ">=3.10",
+  "dependencies": [
+    "torch",
+    "torchvision",
+    "tqdm",
+    "gradio",
+    "diffusers",
+    "transformers",
+    "accelerate",
+    "pillow",
+    "moviepy"
+  ]
+}
